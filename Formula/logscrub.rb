@@ -1,7 +1,6 @@
 class Logscrub < Formula
   desc "Mask secrets and personal data in logs so they can be shared safely"
   homepage "https://github.com/hbenali/logscrub"
-  version "1.1.0"
   license "MIT"
 
   on_macos do
@@ -35,8 +34,8 @@ class Logscrub < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/logscrub --version")
-    assert_equal "password=[REDACTED:kv-secret]\n", pipe_output("#{bin}/logscrub", "password=hunter2\n")
-    assert_match "REDACTED:email", pipe_output("#{bin}/logscrub", "bob@example.org\n")
+    assert_match version.to_s, shell_output(bin/"logscrub --version")
+    assert_equal "password=[REDACTED:kv-secret]\n", pipe_output(bin/"logscrub", "password=hunter2\n")
+    assert_match "REDACTED:email", pipe_output(bin/"logscrub", "bob@example.org\n")
   end
 end
