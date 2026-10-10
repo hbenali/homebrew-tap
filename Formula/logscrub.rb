@@ -34,7 +34,7 @@ class Logscrub < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output(bin/"logscrub --version")
+    assert_match version.to_s, shell_output("#{bin}/logscrub --version")
     assert_equal "password=[REDACTED:kv-secret]\n", pipe_output(bin/"logscrub", "password=hunter2\n")
     assert_match "REDACTED:email", pipe_output(bin/"logscrub", "bob@example.org\n")
   end
