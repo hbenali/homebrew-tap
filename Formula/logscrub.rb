@@ -5,23 +5,23 @@ class Logscrub < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/hbenali/logscrub/releases/download/1.1.0/logscrub_1.1.0_darwin_arm64.tar.gz"
-      sha256 "7764f18615a39d247ffea11365f7e877f299c0b751c123ffc617a8eec82c83b8"
+      url "https://github.com/hbenali/logscrub/releases/download/1.1.1/logscrub_1.1.1_darwin_arm64.tar.gz"
+      sha256 "7bb0a260cf1ae7ad60ab5294378930bf316ad266c3326fcd563829f33ca9a24e"
     end
     on_intel do
-      url "https://github.com/hbenali/logscrub/releases/download/1.1.0/logscrub_1.1.0_darwin_amd64.tar.gz"
-      sha256 "7eb3594cded3243c3c7ae2d0d18e3496d66c8104e2ab9c22921430650fd5ab05"
+      url "https://github.com/hbenali/logscrub/releases/download/1.1.1/logscrub_1.1.1_darwin_amd64.tar.gz"
+      sha256 "c56994490db2ca70297deef32ab3d2515e2a5e2ebb4859c7653f588191dd9ae4"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hbenali/logscrub/releases/download/1.1.0/logscrub_1.1.0_linux_arm64.tar.gz"
-      sha256 "b4afbc5875349799d08dea068a315d4b606a5250194b45fc8671972e4852b6a9"
+      url "https://github.com/hbenali/logscrub/releases/download/1.1.1/logscrub_1.1.1_linux_arm64.tar.gz"
+      sha256 "2b033d80ac38a4c1a3c6d7ec85ffb84b5857f1c9bc0a909597bd4ebe528fd068"
     end
     on_intel do
-      url "https://github.com/hbenali/logscrub/releases/download/1.1.0/logscrub_1.1.0_linux_amd64.tar.gz"
-      sha256 "9be8434381e328407254b458dc7b75af8d849a3bd03190ede2c34a8f95e5cd1c"
+      url "https://github.com/hbenali/logscrub/releases/download/1.1.1/logscrub_1.1.1_linux_amd64.tar.gz"
+      sha256 "be2036906cbba95bcc618d830c6e0d78e8a4f9a00f6a339cfb9fc700bc654460"
     end
   end
 
